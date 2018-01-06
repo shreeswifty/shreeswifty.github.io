@@ -1,0 +1,45 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #2e2e2e;
+  color: #909090;
+  font: 20px arial, sans-serif;
+}
+
+#OLEDPCB{
+  width: 750px;
+  height: 770px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(http://untamed.co.uk/miscImages/oled_display.png);
+}
+
+#OLED{
+  margin-top: 175px;
+  margin-left: 10px;
+  abackground: #000;
+  aborder: 2px solid gray;
+}
+
+#textOutput{
+  margin-top: 6px;
+  font-size: 17px;
+}
+
+#display {
+  text-align: center;
+  width: 750px;
+  height: 770px;
+  abackground: green;
+}
+
+#centerer {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+  width: 750px;
+  height: 720px;
+}
