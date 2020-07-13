@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 25px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay loop id="myVideo">
+
+  <source src="avmp.mp4" type="video/mp4 width">
+  Your browser does not support HTML5 video.
+</video>
+
+
+
+<div class="content">
+  <h1>AVMP-280-N701 (9540) Audio Production II</h1>
+  <h2>Sound Design & Creation with Ableton Live</h2>
+  <p>"Because of Covid-19 and our online component this fall i felt this was an excellent opportunity to provide all our students, musicians and technology professionals living in Howard County a semester long in depth experience that integrates online teaching tools, hi-speed fibre optic course delivery, access to industry standard media tools and a focused mentor-ship exploiting my 15 years of experience with Ableton Live. We're flipping the restrictions of the virus for fall for a unique class opportunity"</p>
+
+Professor Patrick Pagano B.S, M.F.A
+Assistant Professor, Howard Community College
+
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Play";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
